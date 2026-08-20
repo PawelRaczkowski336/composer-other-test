@@ -1,0 +1,28 @@
+{
+    "name": "pawelrtest/pawelrtestother",
+    "description": "Reference repositories + config blocks for Composer. Merge these two blocks into an existing composer.json; see templates/composer/README.md.",
+    "type": "project",
+    "license": "proprietary",
+    "prefer-stable": true,
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "pawelrtest\\pawelrtestother\\": "src/"
+        }
+    },
+    "repositories": [],
+    "config": {
+        "secure-http": true,
+        "lock": true,
+        "sort-packages": true,
+        "optimize-autoloader": true,
+        "use-parent-dir": false,
+        "allow-plugins": {},
+        "policy": {
+            "abandoned": {
+                "audit": "report"
+            }
+        }
+    },
+    "require-dev": {}
+}
